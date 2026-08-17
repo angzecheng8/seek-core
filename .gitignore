@@ -1,0 +1,5 @@
+node_modules/
+# Built output is not committed: npm runs the `prepare` script (tsc) when a
+# consumer installs this as a git dependency, so dist/ is produced at install
+# time. Committing it would let a stale build ship silently.
+dist/
